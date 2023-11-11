@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>MeteoIA</title>
+
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="style.css">
+		
+
+	</head>
+
+
+	<body onload="GetInfo()">
+		<div class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">MeteoIA</h1>
+							<small class="site-description">UEES</small>
+						</div>
+					</a>
+					<div class="mobile-navigation"></div>
+				</div>
+			</div> 
+
+			<div class="hero" data-bg-image="images/banner.jpg">
+				</div>
+				<div class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+						<div class="today forecast">
+							<div class="forecast-header">
+								<div class="day">Sábado</div>
+								<div class="date">11 Nov</div>
+							</div> 
+							<div class="forecast-content">
+								<div class="location">Santa Tecla</div>
+								<div class="degree">
+									<div class="num" id="day1Max">...</div>
+									<div class="forecast-icon">
+										<img src="images/icons/icon-1.svg" alt="" width=90>
+										<span class="minValues" id="day1Min">...</span>
+									</div>	
+								</div>
+								
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Domingo</div>
+							</div> 
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-3.svg" alt="" width=48>
+								</div>
+								<div class="degree"><p class="maxValues"id="day2Max">...</p></div>
+								<small><p class="minValues" id="day2Min">...</p></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Lunes</div>
+							</div> 
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-5.svg" alt="" width=48>
+								</div>
+								<div class="degree"><p class="maxValues"id="day3Max">...</p></div>
+								<small><p class="minValues" id="day3Min">...</p></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Martes</div>
+							</div> 
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-7.svg" alt="" width=48>
+								</div>
+								<div class="degree"><p class="maxValues"id="day4Max">...</p></div>
+								<small><p class="minValues" id="day4Min">...</p></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Miércoles</div>
+							</div> 
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-2.svg" alt="" width=48>
+								</div>
+								<div class="degree"><p class="maxValues"id="day5Max">...</p></div>
+								<small><p class="minValues" id="day5Min">...</p></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Jueves</div>
+							</div> 
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-3.svg" alt="" width=48>
+								</div>
+								<div class="degree"><p class="maxValues"id="day6Max">31.27°C</p></div>
+								<small><p class="minValues" id="day6Min">19.43°C</p></small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Viernes</div>
+							</div> 
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-3.svg" alt="" width=48>
+								</div>
+								<div class="degree"><p class="maxValues"id="day7Max">29.45°C</p></div>
+								<small><p class="minValues" id="day7Min">21.03°C</p></small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<main class="main-content">
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">Ver cámaras</h2>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/q2k72LbXtl4?si=_PWt6tjmS8B4F2NP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</figure>
+									<h3 class="location">Puerto de La Libertad</h3>
+									<small class="date">El Salvador</small>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/ng7oLq3f-Wc?si=zWZ9nb-hpcXkvsL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</figure>
+									<h3 class="location">San Salvador</h3>
+									<small class "date">El Salvador</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</main>
+
+			<footer class="site-footer">
+				<div class="container">
+					<p class="colophon">Copyright 2023 MeteoIA. Todos los derechos reservados.</p>
+				</div>
+			</footer> 
+		</div>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/main.js"></script>
+		
+	</body>
+
+</html>
